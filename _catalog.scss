@@ -1,0 +1,165 @@
+@import "vars";
+
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(248, 243, 244);
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__arrivals {
+        font-weight: 400;
+        font-size: 24px;
+        color: $colorTextContent;
+    }
+
+    &__style {
+        display: inline;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__item--color {
+        color: $colorTextContent;
+    }
+}
+
+.filter-soft {
+    padding-top: 40px;
+    padding-bottom: 80px;
+    position: relative;
+    display: flex;
+    gap: $gapGrid;
+}
+
+.filter {
+    position: absolute;
+    padding: 15px 16px 16px;
+    width: 360px;
+
+    &[open] {
+        box-shadow: 6px 4px 35px 0 rgba(0, 0, 0, 0.21);
+        background: #fff;
+        cursor: pointer;
+    }
+
+    &[open] .filter__heading {
+        color: $colorTextContent;
+    }
+
+    &[open] path {
+        fill: $colorTextContent;
+    }
+
+    &__summary {
+        text-transform: uppercase;
+        color: #000;
+        display: flex;
+        gap: 11px;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    &__heading {
+        font-weight: 600;
+        font-size: 14px;
+        color: #000;
+        line-height: 17px;
+        text-transform: uppercase;
+    }
+
+    &__item {
+        margin-top: 16px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #6F6E6E;
+    }
+
+    &__head {
+        padding: 8px 11px 11px 11px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: #6f6e6e;
+        border-bottom: 1px solid #EBEBEB;
+        border-left: 5px solid $colorTextContent;
+    }
+
+    &__link {
+        font-weight: 400;
+        font-size: 14px;
+        color: #6f6e6e;
+        line-height: 17px;
+
+        &:hover {
+            color: $colorTextContent;
+        }
+    }
+
+    &__link-box {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+        padding: 24px 16px;
+    }
+
+    &__item[open] .filter__head {
+        color: $colorTextContent;
+    }
+
+}
+
+.sort {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 390px;
+    top: 51px;
+    gap: 28px;
+
+    &__details {
+        position: relative;
+    }
+
+    &__summary {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+    }
+
+    &__heading {
+        font-weight: 400;
+        font-size: 14px;
+        color: #6f6e6e;
+        line-height: 17px;
+    }
+
+    &__box {
+        box-shadow: 6px 4px 35px 0 rgba(0, 0, 0, 0.21);
+        background: #fff;
+        padding: 7px 30px 11px 9px;
+        position: absolute;
+        top: 22px;
+        left: -10px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    &__check {
+        display: flex;
+        gap: 9px;
+        align-items: center;
+        font-weight: 400;
+        font-size: 14px;
+        color: #6f6e6e;
+        line-height: 16px;
+    }
+
+}

@@ -1,5 +1,6 @@
 @import "vars";
 @import "mixins";
+@import "catalog";
 
 html {
     box-sizing: border-box;
@@ -31,9 +32,23 @@ button {
     outline: none;
 }
 
+summary {
+    display: block;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
 a {
     text-decoration: none;
     color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 h1,
@@ -85,7 +100,45 @@ p {
 
 }
 
+.menu {
+    width: 232px;
+    box-shadow: 6px 4px 35px 0 rgba(0, 0, 0, 0.21);
+    background: #FFF;
+    top: 85px;
+    right: 10px;
+    padding-top: 37px;
+    padding-left: 34px;
+    position: absolute;
+    z-index: 1;
+
+    &__close {
+        margin-right: 5px;
+    }
+
+    &__subtitle {
+        margin: 0;
+        font-weight: 700;
+        font-size: 14px;
+        color: #000;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+    }
+
+    &__link {
+        color: $colorTextContent;
+    }
+
+    &__item {
+        font-weight: 400;
+        font-size: 14px;
+        color: #6f6e6e;
+        padding: 12px;
+        display: block;
+    }
+}
+
 .caption {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -140,7 +193,7 @@ p {
         gap: 30px;
     }
 
-    &__item {
+    &__link {
         position: relative;
     }
 
