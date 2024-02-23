@@ -1,6 +1,8 @@
 @import "vars";
 @import "mixins";
 @import "catalog";
+@import "card";
+@import "registration";
 
 html {
     box-sizing: border-box;
@@ -57,6 +59,18 @@ h3,
 p {
     margin: 0;
     padding: 0;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; // Yeah, yeah everybody write about it
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
 }
 
 .center {
@@ -392,10 +406,39 @@ p {
         font-size: 18px;
         font-weight: 400;
         line-height: 168%;
+        margin-bottom: 32px;
     }
+
 }
 
+.form {
 
+    &__input {
+        padding: 20px 0;
+        padding-left: 22px;
+        border-radius: 25px 0 0 25px;
+        background-color: #E1E1E1;
+        font-weight: 400;
+        font-size: 14px;
+        color: #222224;
+        opacity: 0.67;
+        width: 256px;
+        margin-right: -3px;
+    }
+
+    &__subscribe {
+        cursor: pointer;
+        padding: 20px 20px;
+        padding-right: 22px;
+        border-radius: 0 25px 25px 0;
+        background-color: $colorTextContent;
+        width: 100px;
+        font-weight: 400;
+        font-size: 14px;
+        text-align: center;
+        color: #fff;
+    }
+}
 
 
 .footer {
@@ -407,9 +450,9 @@ p {
     justify-content: space-between;
 
     &__copyright {
-        color: #FBFBFB;
-        font-size: 16px;
         font-weight: 400;
+        font-size: 16px;
+        color: #fbfbfb;
     }
 
     &__social {
@@ -425,5 +468,7 @@ p {
         border-radius: 50%;
     }
 
-    &__item {}
+    &__item {
+        display: flex;
+    }
 }
