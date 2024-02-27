@@ -203,3 +203,43 @@
         cursor: pointer;
     }
 }
+
+@media (max-width: 1024px) {
+    .product__left {
+        flex-direction: column;
+    }
+
+    .product {
+        justify-content: center;
+    }
+
+    .product .card-form {
+        width: 360px;
+    }
+
+    .product__right {
+        margin: 0;
+        display: inline-block;
+    }
+
+    .checklist {
+        width: 360px;
+    }
+
+    .button-box {
+        margin-bottom: 64px;
+        width: 734px;
+    }
+}
+
+@media (max-width: 768px) {
+    .product__box {
+        width: 734px;
+        justify-content: center;
+    }
+
+    .button-box {
+        justify-content: space-around;
+    }
+
+}

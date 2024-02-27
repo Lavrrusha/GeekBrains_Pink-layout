@@ -1,9 +1,9 @@
 @import "vars";
 
 .header-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
     background-color: rgb(248, 243, 244);
     padding-top: 60px;
     padding-bottom: 60px;
@@ -160,6 +160,17 @@
         font-size: 14px;
         color: #6f6e6e;
         line-height: 16px;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .header-bottom__right {
+        padding-left: 32px;
+    }
+
+    .header-bottom__left {
+        padding-right: 32px;
     }
 
 }
