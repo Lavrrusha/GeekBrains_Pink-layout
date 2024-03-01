@@ -567,3 +567,92 @@ input[type="number"]:focus {
         padding-right: 32px;
     }
 }
+
+@media (max-width: 425px) {
+
+    .header__item:last-child {
+        display: none;
+    }
+
+    .header__item:nth-child(2) {
+        display: none;
+    }
+
+    .caption__image {
+        display: none;
+    }
+
+    .caption__right {
+        padding: 148px 0;
+    }
+
+    .category__list {
+        justify-content: center
+    }
+
+    .category__link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: max-content;
+        gap: 32px;
+    }
+
+    .category__link--size {
+        width: 343px;
+
+    }
+
+    .features {
+        padding: 48px 14px 81px;
+    }
+
+    .modal {
+        padding: 64px 13px 110px;
+        background: url(./img/modal/photo-modal.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .modal__title {
+        display: none;
+    }
+
+    .modal__left {
+        margin-bottom: 120px;
+    }
+
+    .modal__subtitle {
+        display: none;
+    }
+
+    .modal__right {
+        padding: 0 14px;
+    }
+
+
+    .footer {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 375px) {
+    .form__input {
+        width: 220px;
+    }
+
+    .caption__title {
+        font-style: 38px;
+    }
+
+    .caption__name {
+        font-style: 20px;
+    }
+
+    .caption__name--mod {
+        font-style: 20px;
+    }
+}
+
